@@ -50,7 +50,7 @@ public class Application {
 	        jsonDF.show(3);
 	        HashMap<String,String> pathmap = new HashMap<String,String>();
 	        pathmap.put("path", "hdfs://instance-1.us-east1-b.c.central-binder-262323.internal//warehouse/tablespace/external/hive/bdp_db");
-	        jsonDF.write().options(pathmap).format("orc").mode(SaveMode.Append).saveAsTable("bdp_dbjsonTest2");
+	        jsonDF.write().options(pathmap).format("orc").mode(SaveMode.Append).saveAsTable("bdp_db.jsonTest2");
 	}
 	        
 
